@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            /* Project id 2849992 */
+            src: url('//at.alicdn.com/t/font_2849992_gt33xflib4f.eot?t=1633789575866');
+            /* IE9 */
+            src: url('//at.alicdn.com/t/font_2849992_gt33xflib4f.eot?t=1633789575866#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+                url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOIAAsAAAAAB3wAAAM7AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDBgqCUIJNATYCJAMMCwgABCAFhGcHORusBsgekiR4Jg8U4JJvMKMRB8/T/ujPnZkFkMwmVKtuIxJZitXF78wS3p+61xcAsgMKEUwIBlnf+SwrADDMPAF2WNoNceuGOPZKNLl74CBIvXmQz3M5vjbJ9xznmhQe2HlAB9SelkVTqJcn6C2yO4O8qGsQwJEkZWwL6lrawbNDYCbg2GNRBdJa6VCJAM5iGIPBOXsEW+hagyziAGpKPQAshJ+X/7JiDwobjXVIydfKcOt33/sLuwVrDOiffAoCHq8AG0ADcRuzSlO7u4ZdnI5jh2Od2p6U2mIQ1KSx/xahWFfa2n94oBAQW6xqZwCiSEbB73pXnGq2sfSqqzUAtriiE7AOlt576FyT5BNmb1wGX73qDLz52mYx5N968QIWXpb6v+jTvrDm5DazIUdfCG/7pTYyf+9XK27dPruxePB2f/vu0+uF3ec709sfT18COM1cYTt26eg5fS124zdObjL+5flr7GnrVgeuUr91erkJVOy7fX2efrUSXE1INQ8/M9TS6iqrtWrNEQSG6tLsgp+qh5D8VZt6uxq7ErchJEXX2mZMmaACKki0ITWbbIr5yp63UR9ht2aXjwXhYaAKiKnkoviqmNwhvpZb4Gv4JPd9C1wtP5wbw1dFVXH5iUkLSd/8TytOA9uDD4Dr3M+5QRwcwDAArJ+6384TQFfZBf6k31B+Ow9DXiV/7Z0MAL8mupxI0PppgFUC9igAi3+Jph9IavQIaFMndjsQQJObKUIBjnYMLLD8nt4M13vdcVawxyuFwo4gaOwJIQw7BjY4kQJb7MmEI7FqNzvhxcIOMQ5AhGUEwd0xFK6cQePuNmHYr2GDr/ewxd0/OFIVj/2ciEh7NcUCwzISJ5EqmU2Ko2Mh3VZMRg0CrUp0YqqpOIYy0zKKuXpswnSMBdoYyWJMQQo1G1EdvwwbDGZkoeYRLLE0HWOWovR0pe4maZLZCNUoTMBgMkQ0CVFJzEwUn5zlv68VRowyEFAg0ZmmNCqmj2RKkwEg6tUmUNeNHKIZQ2RhGAWioChrhNSJTsygpc0QS/2oEZiESaMbkLQokm6TKVB12vJa48vtARyxjtaiRIvBdGuYOlsETRs3UxkAAA==') format('woff2'),
+                url('//at.alicdn.com/t/font_2849992_gt33xflib4f.woff?t=1633789575866') format('woff'),
+                url('//at.alicdn.com/t/font_2849992_gt33xflib4f.ttf?t=1633789575866') format('truetype'),
+                url('//at.alicdn.com/t/font_2849992_gt33xflib4f.svg?t=1633789575866#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 30px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            width: 640px;
+            height: 350px;
+            background: rgb(246, 249, 250);
+            margin: 0 auto;
+            margin-top: 167px;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-size: 50px;
+            color: rgb(13, 179, 82);
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin-bottom: 30px;
+            padding-left: 60px;
+            width: 190px;
+            height: 40px;
+            line-height: 40;
+            font-style: 16px;
+            border-radius: 15px;
+
+            box-shadow: rgba(167, 164, 164, 0.6) 2px 2px 5px 2px;
+            -moz-box-shadow: rgba(167, 164, 164, 0.6) 2px 2px 5px 2px;
+            -webkit-box-shadow: rgba(167, 164, 164, 0.6) 2px 2px 5px 2px;
+
+        }
+
+        button {
+            font-size: 20px;
+            height: 40px;
+            width: 190px;
+            color: #FFFF;
+            background-color: rgb(13, 179, 82);
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            outline-color: rgb(13, 179, 82);
+        }
+
+        .if-tel {
+            position: absolute;
+            font-size: 2em;
+            left: 205px;
+            top: 90px;
+        }
+
+        .if-pas {
+            position: absolute;
+            font-size: 2em;
+            left: 205px;
+            top: 165px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1>team</h1>
+        <i class="iconfont if-tel">&#xe7ae;</i>
+
+        <input class="input-container" type="text" name=" account" id="account" value="" placeholder=" 用户名"
+            autocomplete="off">
+        <br>
+        <i class="iconfont if-pas">&#xe75b;</i>
+        <input class="input-container" type="text" name=" password" id="password" value="" placeholder="密码"
+            autocomplete="off">
+        <br>
+        <button>提交</button>
+
+    </div>
+</body>
+
+</html>
